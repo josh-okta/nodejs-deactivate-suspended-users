@@ -13,7 +13,7 @@ var key = '';
 var OktaUserCurls = require('./OktaUserCurls.js')(domain, key);
 
 if (!OktaUserCurls) {
-    console.log("You need to add your Okta Domain and a token above`");
+    console.log("You need to add your Okta Domain and a token to the to of this file");
     process.exit(1);
 } else {
     console.log("You're updating users on " + domain);
