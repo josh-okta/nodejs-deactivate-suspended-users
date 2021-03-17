@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-deactivate-suspended-users",
+  "version": "1.0.0",
+  "description": "Deactivates suspended Users in an Okta Tenant",
+  "main": "deactivateUsers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josh-okta/nodejs-deactivate-suspended-users.git"
+  },
+  "keywords": [
+    "node",
+    "curl",
+    "api",
+    "okta",
+    "users",
+    "deactivate",
+    "suspended"
+  ],
+  "author": "Josh Staples",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josh-okta/nodejs-deactivate-suspended-users/issues"
+  },
+  "homepage": "https://github.com/josh-okta/nodejs-deactivate-suspended-users#readme"
+}
