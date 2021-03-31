@@ -10,7 +10,7 @@ var domain = '';
 // create a token under Security -> API -> Tokens
 var key = '';
 
-var OktaUserCurls = require('./OktaUserCurls.js')(domain, key);
+var OktaUserCurls = require('./OktaUserCurls.js')(domain, key, 'email@email.com', 'SENDGRID_API_KEY');
 
 if (!OktaUserCurls) {
     console.log("You need to add your Okta Domain and a token to the to of this file");
@@ -25,14 +25,14 @@ OktaUserCurls.getSuspendedUsers(function(suspendedUsers){
 		var users = JSON.parse(suspendedUsers);
 		console.log(users.length + " users set to deactivate");
 		for (var i = 0; i < users.length; i++){
-				var user = users[i].id;
-				OktaUserCurls.deactivateSuspendedUser(user, function(resp){
-					if(resp){
-						console.log("deactivated user id: ", user);
-					} else {
-						console.log("error deactivating user id: ", user);
-					}
-				});
+			var user = users[i].id;
+			OktaUserCurls.deactivateSuspendedUser(user, function(resp){
+				if(resp){
+					console.log("deactivated user id: ", user);
+				} else {
+					console.log("error deactivating user id: ", user);
+				}
+			});
 		}		
 
 	}

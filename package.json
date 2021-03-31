@@ -1,7 +1,7 @@
 {
   "name": "nodejs-deactivate-suspended-users",
   "version": "1.0.0",
-  "description": "Deactivates suspended Users in an Okta Tenant",
+  "description": "Demos different approaches by executing command line cURLs against your tenant",
   "main": "deactivateUsers.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
